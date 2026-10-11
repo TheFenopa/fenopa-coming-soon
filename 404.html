@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fenopa | Coming soon</title>
+  <meta name="description" content="Fenopa makes fine art prints of North America's wild places: national parks, coastlines and quiet backcountry, painted in matte, opaque colour. Our new shop opens soon.">
+  <link rel="canonical" href="https://fenopa.com/">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#F2EFE9">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fenopa">
+  <meta property="og:title" content="Fenopa | Coming soon">
+  <meta property="og:description" content="Fine art prints of North America's wild places. Our new shop opens soon.">
+  <meta property="og:url" content="https://fenopa.com/">
+  <meta property="og:image" content="https://fenopa.com/meadow-1600.jpg">
+  <meta property="og:image:alt" content="Appalachian Meadow, Winter Rill: a winter meadow below a line of bare woodland and blue ridges">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Hanken+Grotesk:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/meadow-1600.webp" imagesrcset="/meadow-960.webp 960w, /meadow-1600.webp 1600w" imagesizes="(min-width: 900px) 58vw, 100vw" type="image/webp">
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Organization","name":"Fenopa","url":"https://fenopa.com/","email":"support@fenopa.com"}
+  </script>
+
+  <style>
+    :root {
+      --wall: #F2EFE9;
+      --paper: #FCFBF8;
+      --ink: #1B2026;
+      --text: #242A30;
+      --muted: #73726C;
+      --faint: #9C9A93;
+      --pigment: #2F6373;
+      --pigment-deep: #234E5B;
+      --line: #E6E1D6;
+      --serif: "Fraunces", Georgia, "Times New Roman", serif;
+      --sans: "Hanken Grotesk", system-ui, -apple-system, "Segoe UI", sans-serif;
+      --mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Consolas, monospace;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      background: var(--wall);
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 17px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+    .page {
+      display: grid;
+      grid-template-columns: 1fr;
+      min-height: 100vh;
+      min-height: 100dvh;
+    }
+    .art {
+      margin: 0;
+      padding: 16px 16px 0;
+    }
+    .art picture, .art img {
+      display: block;
+      width: 100%;
+    }
+    .art img {
+      height: auto;
+      aspect-ratio: 3 / 2;
+      object-fit: cover;
+      border-radius: 14px;
+      box-shadow: 0 1px 2px rgba(27, 32, 38, .06), 0 12px 32px -12px rgba(27, 32, 38, .28);
+      background: var(--line);
+    }
+    .art figcaption {
+      margin-top: 10px;
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .02em;
+      color: var(--faint);
+    }
+    .copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 40px 16px 32px;
+      max-width: 34rem;
+    }
+    .wordmark {
+      font-family: var(--serif);
+      font-weight: 500;
+      font-size: 22px;
+      letter-spacing: .04em;
+      color: var(--ink);
+      margin: 0 0 40px;
+    }
+    .eyebrow {
+      font-family: var(--mono);
+      font-size: 12px;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+      color: var(--pigment);
+      margin: 0 0 14px;
+    }
+    h1 {
+      font-family: var(--serif);
+      font-weight: 400;
+      font-size: clamp(40px, 9vw, 64px);
+      line-height: 1.04;
+      letter-spacing: -.01em;
+      color: var(--ink);
+      margin: 0 0 22px;
+    }
+    .lede {
+      color: var(--text);
+      margin: 0 0 14px;
+      max-width: 30rem;
+    }
+    .note {
+      color: var(--muted);
+      margin: 0 0 32px;
+      max-width: 30rem;
+    }
+    .contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      align-self: flex-start;
+      padding: 12px 20px;
+      border-radius: 999px;
+      background: var(--pigment);
+      color: var(--paper);
+      font-weight: 500;
+      text-decoration: none;
+      transition: background .15s ease;
+    }
+    .contact:hover { background: var(--pigment-deep); }
+    .contact:focus-visible { outline: 3px solid var(--pigment); outline-offset: 3px; }
+    footer {
+      margin-top: 48px;
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+      font-size: 13px;
+      color: var(--faint);
+    }
+
+    @media (min-width: 900px) {
+      .page {
+        grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+        align-items: center;
+        gap: 56px;
+        padding: 48px 56px;
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+      .art { padding: 0; }
+      .copy { padding: 0; }
+      .wordmark { margin-bottom: 56px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .contact { transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <figure class="art">
+      <picture>
+        <source type="image/webp" srcset="/meadow-960.webp 960w, /meadow-1600.webp 1600w" sizes="(min-width: 900px) 58vw, 100vw">
+        <img src="/meadow-1600.jpg" width="1600" height="1067"
+             alt="A winter meadow slopes toward a dark line of leafless woodland, with blue ridges fading behind"
+             fetchpriority="high" decoding="async">
+      </picture>
+      <figcaption>FEN-000044 &middot; Appalachian Meadow, Winter Rill</figcaption>
+    </figure>
+
+    <section class="copy">
+      <p class="wordmark">FENOPA</p>
+      <p class="eyebrow">Coming soon</p>
+      <h1>Wild places, painted for quiet rooms.</h1>
+      <p class="lede">Fine art prints of North America's national parks, coastlines and backcountry, in matte, opaque colour.</p>
+      <p class="note">Our new shop is on its way. If you have a question in the meantime, we would love to hear from you.</p>
+      <a class="contact" href="mailto:support@fenopa.com">Email support@fenopa.com</a>
+      <footer>&copy; 2026 Fenopa</footer>
+    </section>
+  </main>
+</body>
+</html>
